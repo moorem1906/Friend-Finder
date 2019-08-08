@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Friend A Friend for You</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="/assets/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Saira" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron text-center">
+            <h1 class="text-center">Friend A Friend for You?!</h1>
+            <hr>
+            <br>
+            <div class="text-center">
+                <a href="/api/friend">
+                    <button type="button" class="header-btn btn btn-lg btn-default"><span class="glyphicon glyphicon-list-alt"></span> View Friends</button>
+                </a>
+                <a href="/">
+                    <button type="button" class="header-btn btn btn-lg btn-default"><span class="glyphicon glyphicon-home"></span></button>
+                </a>
+            </div>
+        </div>
+        <h1 class="text-center">Survey Questions</h1>
+        <form id="survey">
+            <h2>About You:</h2>
+
+            <!-- Form for name -->
+            <div class="form-group">
+                <label for="user">Name:</label>
+                <input type="text" class="form-control" id="name" required placeholder="Michael Miller">
+            </div>
+
+            <!-- Form for Photo URL -->
+            <div class="form-group">
+                <label for="photo">URL for Photo:</label>
+                <input type="text" class="form-control" id="photo" required placeholder="link">
+                <br>
+            </div>
+            <hr>
+            <h3>Please rate the following statements, 5 is strongly agree, 1 is strongly disagree...</h3>
+
+            <!-- Survey Question -->
+            <div class="row col-lg-12">
+                <h3>Question 1:</h3>
+                <h4>Do you believe that Aliens exist and that they walk amonst us?</h4>
+                <div class="form-group col-xs-4">
+                    <select class="form-control" id="q0">
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Survey Question -->
+            <div class="row col-lg-12">
+                <h3>Question 2:</h3>
+                <h4>Do you believe that there is life after death?</h4>
+                <div class="form-group col-xs-4">
+                    <select class="form-control" id="q1">
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Survey Question -->
+            <div class="row col-lg-12">
+                <h3>Question 3:</h3>
+                <h4>Do you believe that human behavoir is determined by how they're socialized?</h4>
+                <div class="form-group col-xs-4">
+                    <select class="form-control" id="q2">
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Survey Question -->
+            <div class="row col-lg-12">
+                <h3>Question 4:</h3>
+                <h4>Do you believe that human interaction can yeild physical and mental healing?</h4>
+                <div class="form-group col-xs-4">
+                    <select class="form-control" id="q3">
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Survey Question -->
+            <div class="row col-lg-12">
+                <h3>Question 5:</h3>
+                <h4>Do you have to buy popcorn everytime you go to see a movie?</h4>
+                <div class="form-group col-xs-4">
+                    <select class="form-control" id="q4">
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Survey Question -->
+            <div class="row col-lg-12">
+                <h3>Question 6:</h3>
+                <h4>Do you believe that fear of success causes people to lose their drive to pursue their dreams</h4>
+                <div class="form-group col-xs-4">
+                    <select class="form-control" id="q5">
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Survey Question -->
+            <div class="row col-lg-12">
+                <h3>Question 7:</h3>
+                <h4>Game of Thrones was the best show ever created on STARZ!!</h4>
+                <div class="form-group col-xs-4">
+                    <select class="form-control" id="q6">
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Survey Question -->
+            <div class="row col-lg-12">
+                <h3>Question 8:</h3>
+                <h4>Do you think Tariq from power should have died instead of his sister Raina?</h4>
+                <div class="form-group col-xs-4">
+                    <select class="form-control" id="q7">
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Survey Question -->
+            <div class="row col-lg-12">
+                <h3>Question 9:</h3>
+                <h4>Do you believe a person should choose a gas station that cost 5 cents cheaper then one accross the street?</h4>
+                <div class="form-group col-xs-4">
+                    <select class="form-control" id="q8">
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Survey Question -->
+            <div class="row col-lg-12">
+                <h3>Question 10:</h3>
+                <h4>Do you believe in giving up on your dreams to make your partner happy?</h4>
+                <div class="form-group col-xs-4">
+                    <select class="form-control" id="q9">
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+                <br>
+            </div>
+            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal" id="submit">Submit</button>
+        </form>
+    </div>
+
+    <div id="modal1" class="modal">
+        <div class="modal-content text-center">
+            <h3>Meet your new friend!</h3>
+            <br>
+            <h4 id="matchName"></h4>
+            <br>
+            <img id="matchPic" src="" alt="No Image" width=250px>
+            <br>
+            <br>
+            <br>
+        </div>
+        <div class="modal-footer">
+        </div>
+    </div>
+
+    <script type="text/javascript" src="/assets/logic.js"></script> 
+</body>
+
+</html>
